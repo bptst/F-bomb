@@ -1,0 +1,42 @@
+.body{
+  padding: 0;
+  margin: 0;
+    background-image: url('https://media.tenor.com/iELPF4DOR1sAAAAC/raz-dany-et-raz.gif');
+  display: flex;
+  justify-content: center;
+}
+
+.pannel{
+  /* From https://css.glass */
+  background: rgba(197, 33, 227, 0.39);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border: 1px solid rgba(197, 33, 227, 0.3);
+  padding: 20px;
+display: grid;
+margin-top: 30vh;
+}
+
+.audio_player{
+  height: 50px;
+}
+p{
+  font-family: Lucida Console;
+font-weight: bold;
+color: white;
+}
+
+button{
+  font-family: Lucida Console;
+font-weight: bold;
+color:violet;
+font-size: 20px;
+border: solid;
+margin-top: 10px;
+cursor: pointer;
+}
+.text{
+  position: absolute;
+}

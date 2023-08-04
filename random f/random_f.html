@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>F BOMB</title>
+    <link href="style.css" rel="stylesheet"> </link>
+
+    </head>
+
+    <body class="body">
+
+    <div class='pannel'>
+          <audio controls class="audio_player" autoplay>
+            <source src="f_reverb.mp3" type="">
+        </audio>
+
+        <p>Temps minimum entre deux (secondes)</p>
+        <input class='min' type="number" name="" value="">
+        <p>Temps maximale entre deux (secondes)</p>
+        <input class='max' type="number" name="" value="">
+        <button onclick="change_var()" class='go' type="button" name="button">GO</button>
+    </div>
+
+
+    <p class='text'> WAITING THE BOMB ...</p>
+
+
+
+
+
+</body>
+
+
+<script>
+
+var min_time=20
+var max_time=360
+
+
+function play_f(){
+  document.getElementsByClassName('audio_player')[0].play()
+}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+function main_clock(){
+
+  play_f()
+
+
+  let timer=min_time+getRandomInt(max_time-min_time)
+
+  console.log(timer)
+
+  setTimeout(main_clock, timer*1000)
+
+}
+
+function change_var(){
+  console.log('fezf')
+  min_time=parseInt(document.getElementsByClassName('min')[0].value)
+  max_time=parseInt(document.getElementsByClassName('max')[0].value)
+  console.log(min_time)
+  console.log(max_time)
+  main_clock()
+  document.getElementsByClassName('pannel')[0].style.visibility='hidden'
+
+
+}
+
+</script>
+</html>
